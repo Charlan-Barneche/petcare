@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&family=Raleway:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    background-color: #80B4FF;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 35vh;
+    grid-template-areas:"h h"
+                        "m m"
+                        "s s"
+                        "f f"
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    height: 124px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F9A529;
+    grid-area: h;
+    box-shadow: 1px 2px 5px #4b4b4b36;
+}
+
+header h1{
+    font-family: 'Purple Purse', cursive;
+    font-size: 64px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.logo-header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+.menu-header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    padding: 10px 40px;
+    background-color: #968dcc;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    transition: background-color;
+    transition-duration: 1s;
+    transition: transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.5s;
+}
+
+.menu-header a:hover{
+    background-color: #5f5596;
+    transition: background-color;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    transition: transform;
+    transition-duration: 0.3s;
+
+}
+
+main{
+    grid-area: m;
+    margin-top: 5px;
+}
+
+.content{
+    display:grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 200px 250px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.tanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.tanks img{
+    width: auto;
+    max-width: 250px;
+}
+
+
+.titulo h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Purple Purse', cursive;
+    font-size: 64px;
+    color: #fff;
+    margin-left: 50px;
+    text-shadow: 1px 1px 2px #4b4b4b;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #F9A529;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    grid-area: f;
+
+}
+
+footer p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+
+}
+footer a{
+    color: #fff;
+}

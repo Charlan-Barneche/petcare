@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetShop e HotelPet especializado no conforto e amor dos seus amiguinhos">
+    <link rel="stylesheet" href="styleagenda.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Pet Care</title>
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <a href="index.html"><img src="Logo-PetCare 1.svg" alt="Logo Pet Care"></a>
+            <h1>Pet Care</h1>
+        </div>
+        <div class="menu-header">
+            <a href="index.html">Home</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="sobre.html">Sobre nós</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="titulo">
+                <h1>Agende seu horário!</h1>
+            </div>
+            <div class="gatinho">
+                <img src="gatinho-pc.jpg" alt="">
+            </div>
+            <div class="agenda">
+                <form class="days" name="dias" action="obrigado.html">
+                    <input type="text" name="fname" id="fname" autocomplete="name" required placeholder="Digite seu nome" >
+                    <input type="text" name="petname" id="petname" required placeholder="Digite o nome do PET">
+                    <label for="dias" class="label">Escolha o melhor dia</label>
+                    <input class="dias" name="dias" type="date" required min="2022-01-01" max="2022-12-22" >
+                    <label for="hora">Escolha o Horario perfeito</label>
+                    <input class="hora" name="hora" type="time" required min="08:00" max="16-30" >
+                    <input class="botao" type="submit" value="Agendar" >
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pet Care | Todos os direitos reservados</p>
+        <div class="Developer">
+            <p>Desenvolvido por
+            <a href="https://charlan-barneche.github.io/portifolio/" target="_blank"><strong>&nbsp;Charlan Barneche.</strong></a>
+            </p>       
+        </div>
+    </footer>
+</body>
+</html>
