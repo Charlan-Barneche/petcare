@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&family=Raleway:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 18vh;
+    grid-template-areas:"h h"
+                        "m m"
+                        "s s"
+                        "f f"
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    height: 124px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F9A529;
+    grid-area: h;
+}
+
+header h1{
+    font-family: 'Purple Purse', cursive;
+    font-size: 64px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.logo-header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+.menu-header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    padding: 10px 40px;
+    background-color: #968dcc;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    transition: background-color;
+    transition-duration: 1s;
+    transition: transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.5s;
+}
+
+.menu-header a:hover{
+    background-color: #5f5596;
+    transition: background-color;
+    transition-duration: 1s;
+    transform: rotate(-10deg);
+    transition: transform;
+    transition-duration: 0.3s;
+
+}
+
+main{
+    grid-area: m;
+    margin-top: 5px;
+}
+
+.works{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #02DAFF;
+    padding: 20px 60px;
+    border-radius: 25px;
+    margin: 20px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.shower img{
+    width: auto;
+    max-width: 250px;
+}
+
+.shower:hover{
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.5s;
+    border-radius: 45px;
+}
+
+.clipping{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7CFF8F;
+    padding: 20px 60px;
+    border-radius: 25px;
+    margin: 20px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.clipping img{
+    width: auto;
+    max-width: 250px;
+}
+
+.clipping:hover{
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.5s;
+    border-radius: 45px;
+}
+
+.hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEA8F3;
+    padding: 20px 60px;
+    border-radius: 25px;
+    margin: 20px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.hotel img{
+    width: auto;
+    max-width: 250px;
+}
+
+.hotel:hover{
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.5s;
+    border-radius: 45px;
+}
+
+.work-legend{
+    padding: 0px;
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 90px;
+    background-color: #F9A529;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.work-legend:hover{
+    background-color:#e48902;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.frase{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slogan{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #968dcc;
+    border-radius: 20px;
+
+    
+
+}
+.slogan img{
+    width: auto;
+    max-width: auto;
+    margin-right: 45px;
+}
+
+.slogan p{
+
+    font-family: 'Purple Purse', cursive;
+    font-size: 45px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+footer{
+
+    width: 100%;
+    height: 40px;
+    background-color: #F9A529;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    grid-area: f;
+
+}
+
+footer p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+
+}
+footer a{
+    color: #fff;
+}
