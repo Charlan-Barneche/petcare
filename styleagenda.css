@@ -10,8 +10,8 @@
 body{
     display: grid;
     background-color: #CDEEFF;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 20vh 70vh 35vh;
+    grid-template-columns: 3fr 5fr 0fr;
+    grid-template-rows: 20vh 70vh 55vh 5vh;
     grid-template-areas:"h h"
                         "m m"
                         "s s"
